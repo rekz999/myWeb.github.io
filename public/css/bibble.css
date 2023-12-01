@@ -1,0 +1,113 @@
+.overflow-container {
+  overflow: auto;
+  overflow-y: auto;
+}
+.overflow-container::-webkit-scrollbar {
+  width: 7px;
+}
+.overflow-container::-webkit-scrollbar:hover {
+  width: 15px;
+  transition: all;
+  animation-duration: 500;
+  animation: ease;
+  -webkit-animation: ease-in-out;
+  -webkit-transition: all;
+  -moz-transition: all;
+  -ms-transition: all;
+  -o-transition: all;
+}
+.overflow-container::-webkit-scrollbar-thumb {
+  border: 0.5px solid rgb(0, 255, 213);
+  backdrop-filter: blur(15px);
+  background: rgba(170, 255, 244, 0.1);
+}.overflow-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(170, 255, 244, 0.699);
+}
+.overflow-container::-webkit-scrollbar-track {
+  backdrop-filter: blur(5px); /* Efek latar belakang yang transparan */
+  background-color: rgba(0, 252, 218, 0.048); /* Transparan dengan opasitas 0.5 (50% transparan) */
+  border: 0.5px;
+}
+
+
+.bg-navbar {
+  z-index: 99;
+  border: 1px solid transparent;
+  border-bottom-color: #d6d58e;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.blur-white {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1); /* Warna latar belakang dengan opasitas */
+}
+.blur-black {
+  backdrop-filter: blur(15px);
+  background: rgba(26, 24, 24, 0.795); /* Warna latar belakang dengan opasitas */
+}
+
+  /* btn nav 3 garis  */
+  .btn-nav-line {
+    width: 30px;
+    height: 2px;
+    margin-top: 8px;
+    display: block;
+    background-color: #C2BB00; /* Ganti dengan warna yang sesuai */
+}
+
+.btn-nav-active > span:nth-child(1) {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.btn-nav-active > span:nth-child(3) {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.btn-nav-active > span:nth-child(2) {
+    transform: scale(0);
+}
+
+/* animasi Getar */
+@keyframes getarSlow {
+  0%, 100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+.animateGetar {
+  animation: getarSlow 1s ease-in-out infinite;
+}
+
+
+  /* btn nav 3 garis ennd */
+
+  /* font  */
+/* Menggunakan font 'Pixelify Sans' */
+.f-pixelify-sans {
+    font-family: 'Pixelify Sans', sans-serif;
+  }
+
+  .f-handjet {
+    font-family: 'Handjet';
+  }
+  
+  /* Menggunakan font 'Young Serif' */
+  .f-young-serif {
+    font-family: 'Young Serif', serif;
+  }
+  /* end font  */
+  /* Atur posisi elemen input */
+
+

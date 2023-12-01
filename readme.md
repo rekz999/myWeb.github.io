@@ -1,0 +1,1 @@
+website ini berisi harapan dan rhema beta dari kitab suci, kitab yang dibaca minggir!.

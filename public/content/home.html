@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/bibble.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>~::RHEMA::~</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Young+Serif&display=swap&family=Handjet:wght@300&display=swap&family=Gochi+Hand&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Use the font in your styles */
+        .font-ps {
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+
+        .font-h {
+            font-family: 'Handjet', sans-serif;
+            font-weight: 300;
+        }
+
+        .font-gh {
+            font-family: 'Gochi Hand';
+        }
+    </style>
+
+
+</head>
+
+<body
+    class="font-sans w-full h-full bg-fixed bg-center bg-no-repeat transition-all duration-1000 group-hover:rotate-6 group-hover:scale-125 group-hover:ease-in-out overflow-container"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),url(https://source.unsplash.com/1920x1080?clouds);">
+    <!-- header start nav -->
+    <header class="fixed bg-transparent top-0 left-0 w-full flex items-center z-[99]">
+        <div class="container mx-auto sm:container sm:mx-auto">
+            <div class="flex items-center justify-between relative">
+                <div class="px-2">
+                    <a href="../../"
+                        class="text-4xl f-logo text-[#C2BB00] hover:text-6xl font-bold block py-3 f-pixelify-sans">REKZ</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="btn_nav" name="btn_nav" class="block absolute right-4 lg:hidden">
+                        <!-- Tambahkan kelas-->
+                        <span class="btn-nav-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="btn-nav-line transition duration-300 ease-in-out"></span>
+                        <span class="btn-nav-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <!-- navbar -->
+                    <nav id="nav-menu"
+                        class="hidden absolute py-4 border border-transparent border-l-[#0897B4] border-b-[#0897B4] lg:border-none rounded-lg max-w-[250px] w-full mt-1 right-4 top-full shadow-sm lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex gap-4 p-3">
+                            <!-- ic bibble  -->
+                            <li class="group">
+                                <a href="#bibble" class="text-base text-[#ffff7c] font-bold hover:text-xl">
+                                    <i class="fa-solid fa-book-bible fa-bounce fa-xl" style="color: #ffff7c;"></i>
+                                    BIBBLE
+                                </a>
+                            </li>
+                            <!-- ic q & a  -->
+                            <li class="group mt-4 lg:mt-0">
+                                <a href="#QAbibble" class="text-base text-[#C2BB00] font-bold hover:text-xl">
+                                    <i class="fa-solid fa-circle-question fa-fade fa-lg"></i>
+                                    Q & A
+                                </a>
+                            </li>
+                            <!-- lainnya -->
+                            <li class="group mt-4 lg:mt-0">
+                                <a href="#tes" class="text-base text-[#C2BB00] font-bold hover:text-xl">
+                                    <i class="fa-solid fa-gear fa-spin fa-lg"></i>
+                                    LAINNYA
+                                </a>
+                            </li>
+                            <li class="group mt-4 lg:mt-0">
+                                <label for="cb-admin"
+                                    class="hover:cursor-pointer text-base text-[#C2BB00] hover:text-2xl">
+                                    <i class="fa-solid fa-user-shield fa-beat fa-lg"></i>
+                                </label>
+                            </li>
+                            <!-- cb admin -->
+                            <input type="checkbox" id="cb-admin" class="hidden">
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end nav -->
+
+    <!-- modal pencarian data  -->
+  
+    <!-- end seacrh enggine  -->
+
+    <!-- content  -->
+    <section id="bibble" class="pt-[6rem]">
+        <!-- section alkitab  -->
+        <div
+            class="container h-auto mx-auto px-3 border border-double border-l-white border-l-4 border-transparent pt-5">
+            <!-- button login  -->
+            <div id="btn-AdminInsert" class="mb-7 hover:animate-bounce">
+                <label for="cbR-insert"
+                    class="bg-[#2eff9dc7] text-white hover:bg-transparent hover:blur-black hover:ring-1 hover:ring-[#2eff9dc7] hover:text-[#2eff9dc7] font-bold py-2 px-4 rounded mr-2 cursor-pointer">
+                    INSERT
+                </label>
+            </div>
+
+            <div id="card-container" class="mx-auto grid grid-flow-row  grid-cols-1 lg:grid-cols-2 gap-4">
+                <!-- card  -->
+            </div>
+
+            <!-- checkbox for modal  -->
+            <input type="checkbox" id="cbR-insert" class="hidden">
+
+            <!-- modal read Alkitab -->
+            <div id="modalRA-container" class="container w-full h-[100vh]">
+                <!-- modal read -->
+            </div>
+
+            <div class="container mx-auto hidden" id="cb-readMA">
+                <!-- checkbox  -->
+            </div>
+
+            <!-- modal update del alkitab  -->
+            <div id="modal-container" class="container w-full h-[100vh]">
+                <!-- modal update delete -->
+            </div>
+
+            <!-- cb modal update del  -->
+            <div class="container mx-auto hidden" id="CB-MA">
+                <!-- checkbox  -->
+            </div>
+
+            <!-- modal insert Alkitab -->
+            <div id="modalRA-insert"
+                class="fixed hidden blur-white inset-0 top-0 z-[2] max-w-[70vh] max-h-[80vh] m-auto rounded-xl p-5 md:max-w-[80%] lg:max-w-[90%] ">
+                <!-- modal content  -->
+                <div class=" relative z-[999] w-full h-full hover:ring-2 ring-offset-2 ring-offset-slate-900
+                ring-pink-500 rounded-xl p-5">
+                    <!-- button close  -->
+                    <div
+                        class="fixed flex bg-yellow-200 z-[99] -right-0 -translate-y-10 rounded-full p-1 ring-slate-900 border-2 border-slate-900">
+                        <label for="cbR-insert" class="text-[16px] cursor-pointer">❌</label>
+                    </div>
+                    <!-- end close  -->
+                    <!-- modal item  -->
+                    <form class="overflow-container  h-full">
+                        <div class="w-[100%] py-2 mx-auto">
+                            <label class="font-h mx-auto text-4xl text-[#5bff3a] font-medium">
+                                RHEMA HARIAN
+                            </label>
+                        </div>
+                        <input type="text" name="judulR" id="judulRA"
+                            class="w-full border border-purple-300 mb-4 bg-blue-100 text-slate-800 rounded-sm h-10 p-2 pl-2 text-2xl cursor-pointer active:bg-black active:text-white hover:bg-yellow-400 text-center font-gh font-extrabold"
+                            placeholder="JUDUL OPO ?" autocomplete="off" />
+                        <textarea type="text" name="isiR" id="isiRA"
+                            class="w-full h-[400px] border mb-4 border-purple-300 bg-blue-100 text-slate-800 rounded-sm p-2 pl-2 cursor-pointer active:bg-black active:text-white hover:bg-yellow-400"
+                            placeholder="REKZ, RHEMA APA ?"></textarea>
+                        <button id="RAinsert" class="text-[#5bff3a] mt-5">
+                            <i class="fa-solid fa-circle-plus fa-beat fa-2xl"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div id="modalQ&AA-insert"
+                class="fixed hidden blur-white inset-0 top-0 z-[2] max-w-[70vh] max-h-[80vh] m-auto rounded-xl p-5 md:max-w-[80%] lg:max-w-[90%]  mt-[100px]">
+                <!-- modal content  -->
+                <div class=" relative z-[999] w-full h-full hover:ring-2 ring-offset-1 ring-offset-slate-900
+                                ring-pink-500 rounded-xl p-5">
+                    <!-- button close  -->
+                    <div
+                        class="fixed flex bg-yellow-200 z-[99] -right-0 -translate-y-10 rounded-full p-1 ring-slate-900 border-2 border-slate-900">
+                        <label for="cbQ&A-insert" class="text-[20px] cursor-pointer">❌</label>
+                    </div>
+                    <!-- end close  -->
+                    <!-- modal item  -->
+                    <form class=" overflow-container h-full">
+                        <div class="w-[100%] py-2 mx-auto">
+                            <label class="font-h mx-auto text-4xl text-[#5bff3a] font-medium">
+                                RHEMA HARIAN
+                            </label>
+                        </div>
+                        <input type="text" id="questionA"
+                            class="w-full border border-purple-300 mb-4 bg-blue-100 text-slate-800 rounded-sm h-10 p-2 pl-2 text-2xl cursor-pointer active:bg-black active:text-white hover:bg-yellow-400 text-center font-gh font-extrabold"
+                            placeholder="PERTANYAAN APA ?" autocomplete="off" />
+                        <textarea type="text" id="answerA"
+                            class="w-full h-[400px] border mb-4 border-purple-300 bg-blue-100 text-slate-800 rounded-sm p-2 pl-2 cursor-pointer active:bg-black active:text-white hover:bg-yellow-400"
+                            placeholder="REKZ, JAWABLAH ?"></textarea>
+                        <button id="QAinsert" class="text-[#5bff3a] mt-5">
+                            <i class="fa-solid fa-circle-plus fa-beat fa-2xl"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <br>
+
+        </div>
+    </section>
+
+    <section id="QAbibble" class="pt-[6rem]">
+        <!-- section q & a  -->
+        <div class="">
+            <div class="container h-auto mx-auto mt-1 px-3 border border-double border-l-yellow-400 border-l-4 border-transparent">
+                <!-- button login  -->
+                <div id="btn-AdminInsertQ&A" class="mb-4 hover:animate-bounce">
+                    <label for="cbQ&A-insert"
+                        class="bg-[#14ff91c7] text-white hover:bg-transparent hover:blur-black hover:ring-1 hover:ring-[#1dff95c7] hover:text-[#2eff9dc7] font-bold py-2 px-4 rounded mr-2 cursor-pointer">
+                        INSERT
+                    </label>
+                </div>
+                <!-- checkbox for modal  -->
+                <input type="checkbox" id="cbQ&A-insert" class="hidden">
+
+                <div id="cardQ&A-container" class="mx-auto grid grid-flow-row  grid-cols-1 lg:grid-cols-2 gap-4">
+                    <!-- card  -->
+                </div>
+
+                <!-- modal read Alkitab -->
+                <div id="modalQ&AA-container" class="container w-full h-[100vh]">
+                    <!-- modal read -->
+                </div>
+
+                <div class="container mx-auto hidden" id="cb-readMQ&AA">
+                    <!-- checkbox read QA -->
+                </div>
+
+                <!-- modal update del alkitab  -->
+                <div id="modalQ&A-container" class="container w-full h-[100vh]">
+                    <!-- modal update delete -->
+                </div>
+
+                <!-- cb modal update del  -->
+                <div class="container mx-auto hidden" id="CB-MQ&AA">
+                    <!-- checkbox  -->
+                </div>
+
+                <!-- modal insert q & a alkitab -->
+                <div id="modalQ&AA-insert"
+                    class="fixed hidden blur-white inset-0 top-0 z-[2] max-w-[70vh] max-h-[80vh] m-auto rounded-xl p-5 md:max-w-[80%] lg:max-w-[90%]  mt-[100px]">
+                    <!-- modal content  -->
+                    <div class=" relative z-[999] w-full h-full hover:ring-2 ring-offset-1 ring-offset-slate-900
+                                ring-pink-500 rounded-xl p-5">
+                        <!-- button close  -->
+                        <div
+                            class="fixed flex bg-yellow-200 z-[99] -right-0 -translate-y-10 rounded-full p-1 ring-slate-900 border-2 border-slate-900">
+                            <label for="cbQ&A-insert" class="text-[20px] cursor-pointer">❌</label>
+                        </div>
+                        <!-- end close  -->
+                        <!-- modal item  -->
+                        <form class=" overflow-container h-full">
+                            <div class="w-[100%] py-2 mx-auto">
+                                <label class="font-h mx-auto text-4xl text-[#5bff3a] font-medium">
+                                    RHEMA HARIAN
+                                </label>
+                            </div>
+                            <input type="text" id="questionA"
+                                class="w-full border border-purple-300 mb-4 bg-blue-100 text-slate-800 rounded-sm h-10 p-2 pl-2 text-2xl cursor-pointer active:bg-black active:text-white hover:bg-yellow-400 text-center font-gh font-extrabold"
+                                placeholder="PERTANYAAN APA ?" autocomplete="off" />
+                            <textarea type="text" id="answerA"
+                                class="w-full h-[400px] border mb-4 border-purple-300 bg-blue-100 text-slate-800 rounded-sm p-2 pl-2 cursor-pointer active:bg-black active:text-white hover:bg-yellow-400"
+                                placeholder="REKZ, JAWABLAH ?"></textarea>
+                            <button id="QAinsert" class="text-[#5bff3a] mt-5">
+                                <i class="fa-solid fa-circle-plus fa-beat fa-2xl"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <br>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="tes" class="mx-auto w-full h-[100vh] pt-[100px]">
+        <div class="container">
+
+            <div class="flex flex-wrap my-16">
+                <a href="#bibble"
+                    class="mx-auto cursor-pointer text-[80px] lg:text-[150px] font-gh text-yellow-400">TYPING...</a>
+            </div>
+            <br>
+            <div class="overflow-container">
+                <div class="content">
+                    <!-- Konten Anda di sini -->
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- end content  -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+
+    <script src="js/auth_home.js"></script>
+    <script src="js/auth_crudRA.js"></script>
+    <script src="js/auth_crudQ&A.js"></script>
+</body>
+
+</html>

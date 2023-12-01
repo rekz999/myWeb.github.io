@@ -1,0 +1,34 @@
+ <!-- header start nav -->
+ <header class="absolute bg-transparent top-0 left-0 w-full flex items-center z-10 sm:bg-nav">
+    <div class="container mx-auto sm:container sm:mx-auto">
+      <div class="flex items-center justify-between relative">
+        <div class="px-2">
+          <a href="#"
+            class="text-2xl f-logo text-yellow-400 hover:text-4xl font-bold block py-3 f-pixelify-sans">REKZ</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="btn_nav" name="btn_nav" class="block absolute right-4 lg:hidden">
+            <!-- Tambahkan kelas lg:hidden -->
+            <span class="btn-nav-line transition duration-300 ease-in-out origin-top-left"></span>
+            <span class="btn-nav-line transition duration-300 ease-in-out"></span>
+            <span class="btn-nav-line transition duration-300 ease-in-out origin-bottom-left"></span>
+          </button>
+          <!-- Tambahkan kelas lg:flex -->
+          <nav id="nav-menu"
+            class="hidden blur-white absolute py-4 border border-transparent border-l-[#d6d] border-b-[#FF9933] lg:border-none rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="#"
+                  class="text-base py-2 text-white mx-4 flex hover:text-yellow-400 font-bold bold hover:text-xl">Home</a>
+              </li>
+              <li class="group">
+                <a href="#"
+                  class="text-base py-2 text-white mx-4 flex hover:text-yellow-400 font-bold bold hover:text-xl">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end nav -->

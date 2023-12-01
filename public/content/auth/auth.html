@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/bibble.css">
+    <title>Administrator</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Young+Serif&display=swap&family=Handjet:wght@300&display=swap&family=Gochi+Hand&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Use the font in your styles */
+        .font-ps {
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+
+        .font-h {
+            font-family: 'Handjet', sans-serif;
+            font-weight: 300;
+        }
+
+        .font-gh {
+            font-family: 'Gochi Hand';
+        }
+    </style>
+</head>
+
+<body class="overflow-container mx-auto w-full h-full bg-black">
+    <div class="w-full h-[100vh] text-pink-500 flex justify-center align-middle items-center">
+        <span id="animation-typing" class="lg:h-[75px] font-ps text-[90px]"></span>
+    </div>
+
+    <script>
+        const textElement = document.getElementById('animation-typing');
+        const text = "You're not Administrator";
+        let index = 0;
+
+        function type() {
+            if (index < text.length) {
+                textElement.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(type, 400); // Kecepatan ketik (ms)
+            } else {
+                // Teks telah selesai diketik, atur ulang indeks untuk animasi berulang
+                index = 0;
+                textElement.innerHTML = '';
+                setTimeout(type, 50); // Jeda sebelum animasi berulang (ms)
+            }
+        }
+        type(); // Memulai animasi ketik
+  // typing animation end
+    </script>
+</body>
+
+</html>
