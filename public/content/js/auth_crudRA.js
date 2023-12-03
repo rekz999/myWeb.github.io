@@ -39,7 +39,7 @@ function generateElemenetRA(childSnapshot) {
 
   // card   
   const card = document.createElement("div");
-  card.className = "flex hover:mb-[200px] justify-center items-center w-full lg-w rounded-xl h-[15rem] mx-auto uppercase overflow-hidden hover:ring-2 hover:ring-yellow-500 relative group";
+  card.className = "flex justify-center items-center w-full lg-w rounded-xl h-[15rem] mx-auto uppercase overflow-hidden hover:ring-2 hover:ring-yellow-500 relative group";
 
   // modal read rhema alkitab 
   const modalRA = document.createElement("div");

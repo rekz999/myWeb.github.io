@@ -8,11 +8,9 @@ window.addEventListener('scroll', function () {
 
   if (window.pageYOffset > fixedNav) {
     header.classList.add('bg-navbar');
-    modalRA_insert.classList.add("mt-[100px]");
 
   } else {
     header.classList.remove('bg-navbar');
-    modalRA_insert.classList.remove("mt-[100px]");
   }
 });
 
