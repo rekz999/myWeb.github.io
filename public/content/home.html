@@ -148,16 +148,30 @@
     <section id="tes" class="mx-auto w-full h-[100vh] pt-[100px]">
         <div class="container">
 
-            <div class="flex flex-wrap my-16">
-                <a href="#bibble"
-                    class="mx-auto cursor-pointer text-[80px] lg:text-[150px] font-gh text-yellow-400">TYPING...</a>
+            <div class="w-full h-[100vh] text-pink-500 flex justify-center align-middle items-center">
+                <span id="animation-typing" class="lg:h-[75px] font-ps text-[90px]"></span>
             </div>
-            <br>
-            <div class="overflow-container">
-                <div class="content">
-                    <!-- Konten Anda di sini -->
-                </div>
-            </div>
+        
+            <script>
+                const textElement = document.getElementById('animation-typing');
+                const text = "You're not Administrator";
+                let index = 0;
+        
+                function type() {
+                    if (index < text.length) {
+                        textElement.innerHTML += text.charAt(index);
+                        index++;
+                        setTimeout(type, 400); // Kecepatan ketik (ms)
+                    } else {
+                        // Teks telah selesai diketik, atur ulang indeks untuk animasi berulang
+                        index = 0;
+                        textElement.innerHTML = '';
+                        setTimeout(type, 50); // Jeda sebelum animasi berulang (ms)
+                    }
+                }
+                type(); // Memulai animasi ketik
+          // typing animation end
+            </script>
 
 
         </div>
