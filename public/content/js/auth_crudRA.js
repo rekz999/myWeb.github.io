@@ -54,20 +54,18 @@ function generateElemenetRA(childSnapshot) {
 
   // content card & modal 
   // card content
+  
   const cardContent = `
-  <!-- img background  -->
-  <div class="w-full h-full bg-fixed bg-center bg-no-repeat transition-all duration-1000 group-hover:rotate-6 group-hover:scale-125 group-hover:ease-in-out" style="background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),url(https://source.unsplash.com/1920x1080?clouds);">    
-  </div>
-    <!-- end background  -->
-    <!-- card judul  -->
-  <div class="h-[80%] w-[95%] flex border hover:animateGetar group-hover:w-[80%] transition-all ease-in-out duration-1000 border-yellow-600 shadow-xl rounded-md justify-center items-center absolute content-center">
-        <label for="${cbrma.id}">
-            <span class="group-hover:text-[2rem] group-hover:transition-all group-hover:ease-in-out text-2xl duration-[3000] font-vast text-yellow-500 font-gh font-semibold hover:scale-110 hover:cursor-pointer">${judul}</span>
-        </label>      
-  </div>
-    <button id="delete|${kunciUnik}" class="text-[#fa465e] hover:text-2xl hover:transition-all hover:duration-1000 hover:ease-out absolute bottom-3 right-3 mt-5 m-2 transform hover:animate-bounce">
-    <i class="fa-solid fa-trash fa-xl"></i>
-    </button>
+    <!-- img background  -->
+    <div class="w-full h-full bg-fixed bg-center bg-no-repeat transition-all duration-1000 group-hover:rotate-6 group-hover:scale-125 group-hover:ease-in-out" style="background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),url(https://source.unsplash.com/1920x1080?clouds);">    
+    </div>
+      <!-- end background  -->
+      <!-- card judul  -->
+    <div class="h-[80%] w-[95%] flex border hover:animateGetar group-hover:w-[80%] transition-all ease-in-out duration-1000 border-yellow-600 shadow-xl rounded-md justify-center items-center absolute content-center">
+          <label for="${cbrma.id}">
+              <span class="group-hover:text-[2rem] group-hover:transition-all group-hover:ease-in-out text-2xl duration-[3000] font-vast text-yellow-500 font-gh font-semibold hover:scale-110 hover:cursor-pointer">${judul}</span>
+          </label>      
+    </div>
    
   `;
   card.innerHTML = cardContent;
