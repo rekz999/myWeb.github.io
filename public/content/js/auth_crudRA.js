@@ -183,6 +183,8 @@ function generateElemenetRA(childSnapshot) {
     }
   });
 
+  // ---------------------------------------------------------------------------------
+
   // update & delete 
   function UDFormAlkitab() {
     const date = new Date();
@@ -206,8 +208,8 @@ function generateElemenetRA(childSnapshot) {
         timestamp: firebase.database.ServerValue.TIMESTAMP, //mengurutkan data
       });
     alert("Data Update");
-    cbRMAC.checked = !cbRMAC.checked;
     readDataAndCreateElement();
+    cbRMAC.checked = !cbRMAC.checked;
 
   };
   document.getElementById(`delete|${kunciUnik}`).onclick = function () {
