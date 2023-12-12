@@ -187,6 +187,9 @@ function generateElemenetRA(childSnapshot) {
 
   // update & delete 
   function UDFormAlkitab() {
+    
+  }
+  document.getElementById(`update|${kunciUnik}`).onclick = function () {
     const date = new Date();
     const formattedDate = date.toLocaleDateString(); // Format date as per user's locale
     const formattedTime = date.toLocaleTimeString(); // Format time as per user's locale
@@ -195,9 +198,6 @@ function generateElemenetRA(childSnapshot) {
     isiVA = document.getElementById(`isiRM|${isi}`).value;
     tglVA = formattedDate + "|" + formattedTime;
     console.log("data update : ", judulVA, isiVA, tglVA);
-  }
-  document.getElementById(`update|${kunciUnik}`).onclick = function () {
-    UDFormAlkitab();
     firebase
       .database()
       .ref(`alkitab/${kunciUnik}`)
