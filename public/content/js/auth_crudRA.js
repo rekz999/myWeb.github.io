@@ -143,7 +143,7 @@ function generateElemenetRA(childSnapshot) {
                             <input type="text" name="judul" id="judulRM|${judul}"
                                 class="w-full border border-purple-300 mb-4 bg-blue-100 text-slate-800 rounded-sm h-10 p-2 pl-2 text-2xl cursor-pointer active:bg-black active:text-white hover:bg-yellow-400 text-center font-gh font-extrabold"
                                 placeholder="JUDUL OPO ?" value="${judul}"/>
-                            <textarea type="text" name="isi" id="isiRM|${isi}" class="w-full h-[400px] border mb-4 border-purple-300 bg-blue-100 text-slate-800 rounded-sm p-2 pl-2 cursor-pointer active:bg-black active:text-white hover:bg-yellow-400" placeholder="REKZ, RHEMA APA ?">${isi}</textarea>
+                            <textarea type="text" id="isiRM|${kunciUnik}" class="w-full h-[400px] border mb-4 border-purple-300 bg-blue-100 text-slate-800 rounded-sm p-2 pl-2 cursor-pointer active:bg-black active:text-white hover:bg-yellow-400" placeholder="REKZ, RHEMA APA ?">${isi}</textarea>
                             <div class="flex flex-wrap">
                                 <button id="update|${kunciUnik}" class="mt-5 m-2">
                                     <i class="fa-solid fa-pen-to-square fa-bounce fa-2xl"
